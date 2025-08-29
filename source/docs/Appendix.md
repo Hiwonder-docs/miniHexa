@@ -9,4 +9,3 @@
 * ch34x Driver : [ch341ser.exe]()
 * miniHexa Factory Firmware : [Font Generator Software]()
 * Action Group Files : [Action group files]()
-
