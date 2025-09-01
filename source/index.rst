@@ -21,3 +21,4 @@ miniHexa
    docs/8.AI_Voice_Interaction_Course.md
    docs/9.Serial_Communication_Hands_on_Course.md
    docs/Appendix.md
+   Download <https://drive.google.com/drive/folders/1jJgA50UKHKdnsM-1BG97vx5eid8GH-yo?usp=sharing>
