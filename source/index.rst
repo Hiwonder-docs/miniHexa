@@ -4,12 +4,12 @@
    contain the root `toctree` directive.
 
 ===========
-miniHexa
+miniHexa V1.1
 ===========
 
 .. toctree::
    :maxdepth: 2
-   :caption: miniHexa
+   :caption: miniHexa V1.1
 
    docs/1.Read_First_Course.md
    docs/2.APP_Control.md
