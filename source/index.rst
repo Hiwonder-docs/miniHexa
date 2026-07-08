@@ -13,7 +13,7 @@ miniHexa V1.2
 
    docs/1_Read_First.md
    docs/2_APP_Control.md
-   docs/3_PC Control_and_Action_Group_Editing.md
+   docs/3_PC_Control_and_Action_Group_Editing.md
    docs/4_Development_Environment_Setup.md
    docs/5_Arduino_Project.md
    docs/6_Python_Project.md
