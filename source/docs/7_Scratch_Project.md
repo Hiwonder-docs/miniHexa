@@ -6,9 +6,9 @@
 
 #### 7.1.1.1 Firmware Flashing
 
-> [!Note]
->
-> **Before flashing the firmware, make sure to save the servo deviation values according to [Read the Deviation Values in the PC Software](#anther7.1.2.1).**
+:::{Note}
+**Before flashing the firmware, make sure to save the servo deviation values according to [Read the Deviation Values in the PC Software](#anther7.1.2.1).**
+:::
 
 1. Extract [**2. Software/5.ESP32S3 Firmware Flashing Tool/flash_download_tool_3.9.7_1.zip**](https://drive.google.com/drive/folders/1rbPG3zhbXIqjQKnRd51mkg0iL94MHgjL?usp=sharing). Then double-click `flash_download_tool_3.9.7.exe` to open the flash tool.
 
@@ -80,9 +80,9 @@ WonderCode is a Scratch programming tool developed for Hiwonder products. It sup
 
 <img class="common_img" src="../_static/media/chapter_6/section_1/01/image12.png" style="width:400px" />
 
-> [!NOTE]
->
-> **The port number is not fixed and depends on the actual connection on each PC. In this section, "COM4" is used as an example. Do not select "COM1", which is usually reserved for system communication.**
+:::{Note}
+**The port number is not fixed and depends on the actual connection on each PC. In this section, "COM4" is used as an example. Do not select "COM1", which is usually reserved for system communication.**
+:::
 
 If multiple USB devices are connected and the port number is unclear, open **This PC** on the desktop. Then click **Properties -> Device Manager** to check the port number of the controller.
 
@@ -136,9 +136,9 @@ Downloading an Arduino program to the ESP32 erases the existing firmware, which 
 
 <img class="common_img" src="../_static/media/chapter_5/section_1/image20.png"  width="800px" />
 
-> [!NOTE]
->
-> **After the servo deviation values are read, take a screenshot to keep a backup and prevent data loss.**
+:::{Note}
+**After the servo deviation values are read, take a screenshot to keep a backup and prevent data loss.**
+:::
 
 <p id ="anther7.1.2.2"></p>
 
@@ -203,9 +203,9 @@ robot.set_deviation(18 , -9)
 
 <img class="common_img" src="../_static/media/chapter_5/section_1/image26.png"  />
 
-> [!NOTE]
->
-> **The deviation calibration program needs to be downloaded to miniHexa and run only once. After that, the settings are stored in the miniHexa Arduino programming environment. No additional setup is required.**
+:::{Note}
+**The deviation calibration program needs to be downloaded to miniHexa and run only once. After that, the settings are stored in the miniHexa Arduino programming environment. No additional setup is required.**
+:::
 
 #### 7.1.2.3 Read the Written Deviation Values
 
@@ -323,60 +323,26 @@ Because the overall motion of the robot involves the coupling of the gait algori
 
 <img src="../_static/media/chapter_4/section_4/media/image9.png" style="width:600px"   />
 
-> [!NOTE]
->
-> - **In the actual design, a metal plate is mounted at joint `O3` at the end of the leg. Its width extends in the same direction as link r<sub>2</sub>. Therefore, in the following calculations, that width is treated as the foot-end offset `offset` and is included as part of link r<sub>2</sub>.**
-> - **In the D-H parameter table and in the forward and inverse kinematics derivations below, r<sub>2</sub> already includes the foot-end offset `offset`.**
+:::{Note}
+* **In the actual design, a metal plate is mounted at joint `O3` at the end of the leg. Its width extends in the same direction as link r<sub>2</sub>. Therefore, in the following calculations, that width is treated as the foot-end offset `offset` and is included as part of link r<sub>2</sub>.**
+* **In the D-H parameter table and in the forward and inverse kinematics derivations below, r<sub>2</sub> already includes the foot-end offset `offset`.**
+:::
 
-<table>
-<colgroup>
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<tbody>
-<tr>
-<td colspan="5" style="text-align: center;">D-H Parameter Table</td>
-</tr>
-<tr>
-<td style="text-align: center;">i</td>
-<td style="text-align: center;">d</td>
-<td style="text-align: center;">theta</td>
-<td style="text-align: center;">r</td>
-<td style="text-align: center;">alpha</td>
-</tr>
-<tr>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">2.85</td>
-<td style="text-align: center;">90</td>
-</tr>
-<tr>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">5.2</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">7.2</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr>
-<td colspan="5" style="text-align: left;">Description of the four D-H parameters:<br />
-1. d is the offset of coordinate system a(i+1) relative to coordinate system a(i) along the Z(i) axis<br />
-2. theta is the angle between the X-axes of coordinate systems a(i) and a(i+1)<br />
-3. r is the mathematical length of the link<br />
-4. alpha is the angle from Z(i-1) to Z(i+1) after rotation around X(i)</td>
-</tr>
-</tbody>
-</table>
+**D-H Parameter Table**
+
+| i | d | theta | r | alpha |
+|:--:|:--:|:--:|:--:|:--:|
+| 1 | 0 | 0 | 2.85 | 90 |
+| 2 | 0 | 0 | 5.2 | 0 |
+| 3 | 0 | 0 | 7.2 | 0 |
+
+Description of the four D-H parameters:
+
+1. d is the offset of coordinate system a(i+1) relative to coordinate system a(i) along the Z(i) axis
+2. theta is the angle between the X-axes of coordinate systems a(i) and a(i+1)
+3. r is the mathematical length of the link
+4. alpha is the angle from Z(i-1) to Z(i+1) after rotation around X(i)
+
 
 
 **Single-Leg Forward Kinematics Overview**
@@ -1076,9 +1042,9 @@ The glowy ultrasonic module integrates an I2C Port. It supports reading the meas
 
 During ranging, the module automatically sends eight `40 kHz` square waves and then checks whether a return signal is received. If a signal is received, the module outputs a high level. The duration of the high level is the travel time of the ultrasonic signal from transmission to return.
 
-> [!NOTE]
->
-> **The glowy ultrasonic module is already connected to the onboard I2C Port at the factory. No additional wiring is required.**
+:::{Note}
+**The glowy ultrasonic module is already connected to the onboard I2C Port at the factory. No additional wiring is required.**
+:::
 
 #### 7.3.3.4 Program Download
 
@@ -1144,9 +1110,9 @@ The glowy ultrasonic module integrates an I2C Port. It supports reading the meas
 
 During ranging, the module automatically sends eight `40 kHz` square waves and then checks whether a return signal is received. If a signal is received, the module outputs a high level. The duration of the high level is the travel time of the ultrasonic signal from transmission to return.
 
-> [!NOTE]
->
-> **The glowy ultrasonic module is already connected to the onboard I2C Port at the factory. No additional wiring is required.**
+:::{Note}
+**The glowy ultrasonic module is already connected to the onboard I2C Port at the factory. No additional wiring is required.**
+:::
 
 #### 7.3.4.4 Program Download
 
@@ -1212,9 +1178,9 @@ The glowy ultrasonic module integrates an I2C Port. It supports reading the meas
 
 During ranging, the module automatically sends eight `40 kHz` square waves and then checks whether a return signal is received. If a signal is received, the module outputs a high level. The duration of the high level is the travel time of the ultrasonic signal from transmission to return.
 
-> [!NOTE]
->
-> **The glowy ultrasonic module is already connected to the onboard I2C Port at the factory. No additional wiring is required.**
+:::{Note}
+**The glowy ultrasonic module is already connected to the onboard I2C Port at the factory. No additional wiring is required.**
+:::
 
 #### 7.3.5.4 Program Download
 
@@ -1388,9 +1354,9 @@ The module uses an I2C Port and can read the distance measured by the ultrasonic
 
 During ranging, the module automatically sends eight `40 kHz` square waves and then checks whether a return signal is received. If a signal is received, the module outputs a high level. The duration of the high level is the travel time of the ultrasonic signal from transmission to return.
 
-> [!NOTE]
->
-> **The glowy ultrasonic module is already connected to the onboard I2C Port at the factory. No additional wiring is required.**
+:::{Note}
+**The glowy ultrasonic module is already connected to the onboard I2C Port at the factory. No additional wiring is required.**
+:::
 
 2. Dot matrix module
 
@@ -1672,9 +1638,9 @@ Use a 4-pin cable to connect the module to any I2C Port highlighted in red on th
 
 <img src="../_static/media/chapter_4/section_22/media/image1.png" style="width:600px" />
 
-> [!NOTE]
->
-> **If the device does not appear under Ports, the driver may not be installed on the PC. The installation package is available at [2. Software/7.CH34x Driver Tool/ch341ser.exe](https://drive.google.com/drive/folders/1DQjHDVH7Nvnxklj2mXLUrNuWhbSHIlCe?usp=sharing). Install the driver manually if needed.**
+:::{Note}
+**If the device does not appear under Ports, the driver may not be installed on the PC. The installation package is available at [2. Software/7.CH34x Driver Tool/ch341ser.exe](https://drive.google.com/drive/folders/1DQjHDVH7Nvnxklj2mXLUrNuWhbSHIlCe?usp=sharing). Install the driver manually if needed.**
+:::
 
 2. Connect to the hotspot generated by the module: `HW_ESP32S3CAM`.
 
@@ -1735,9 +1701,9 @@ When the ESP32S3 runs the face detection function:
 |  `0x52` device address  |             Communication address of the ESP32S3             |
 | `0x01` register address | Read face data `[int16_t x, y, w, h]`. All data values are `0` when no face is detected |
 
-> [!NOTE]
->
-> **In the face data, `x`, `y`, `w`, and `h` represent the face detection box marked in the original image. These values are the center point `x` coordinate, center point `y` coordinate, detection box width, and detection box height. The unit is pixels. See [7.4.3.4 Module Coordinate System Description](#anther7.4.3.4) for details about the pixel coordinate system used in this mode.**
+:::{Note}
+**In the face data, `x`, `y`, `w`, and `h` represent the face detection box marked in the original image. These values are the center point `x` coordinate, center point `y` coordinate, detection box width, and detection box height. The unit is pixels. See [7.4.3.4 Module Coordinate System Description](#anther7.4.3.4) for details about the pixel coordinate system used in this mode.**
+:::
 
 When the ESP32S3 runs the color recognition function:
 
@@ -1747,11 +1713,10 @@ When the ESP32S3 runs the color recognition function:
 | `0x00` register address | Read color `0` data. The returned data format is `[int16_t x, y, w, h]`. All data values are `0` when no target is detected |
 | `0x01` register address | Read color `1` data. The returned data format is `[int16_t x, y, w, h]`. All data values are `0` when no target is detected |
 
-> [!NOTE]
->
-> **In the color data, `x`, `y`, `w`, and `h` represent the color block detection box marked in the original image. These values are the center point `x` coordinate, center point `y` coordinate, detection box width, and detection box height. The unit is pixels. See [7.4.3.4 Module Coordinate System Description](#anther7.4.3.4) for details about the pixel coordinate system used in this mode.**
->
-> **If multiple color blocks in the camera view match the preset color threshold, the module selects the two largest color blocks in the image and stores their detection box data in the `0x00` and `0x01` register spaces in sequence.**
+:::{Note}
+* **In the color data, `x`, `y`, `w`, and `h` represent the color block detection box marked in the original image. These values are the center point `x` coordinate, center point `y` coordinate, detection box width, and detection box height. The unit is pixels. See [7.4.3.4 Module Coordinate System Description](#anther7.4.3.4) for details about the pixel coordinate system used in this mode.**
+* **If multiple color blocks in the camera view match the preset color threshold, the module selects the two largest color blocks in the image and stores their detection box data in the `0x00` and `0x01` register spaces in sequence.**
+:::
 
 <p id ="anther7.4.3.4"></p>
 
@@ -1771,25 +1736,25 @@ Pay attention to the following two characteristics of the module image coordinat
 
 <img src="../_static/media/chapter_4/section_23/media/image2.png" style="width:600px" />
 
-> [!NOTE]
->
-> **The image transmission mode uses a resolution of `320 x 240` to match the image data interface used by the mobile app.**
+:::{Note}
+**The image transmission mode uses a resolution of `320 x 240` to match the image data interface used by the mobile app.**
+:::
 
 **Face Detection Mode**
 
 <img src="../_static/media/chapter_4/section_23/media/image3.png" style="width:600px" />
 
-> [!NOTE]
->
-> **To ensure smooth image performance, the face detection mode uses a tested resolution of `240 x 240`.**
+:::{Note}
+**To ensure smooth image performance, the face detection mode uses a tested resolution of `240 x 240`.**
+:::
 
 **Color Recognition Mode**
 
 <img src="../_static/media/chapter_4/section_23/media/image4.png" style="width:600px" />
 
-> [!NOTE]
->
-> **To ensure smooth image performance, the color recognition mode uses a tested resolution of `160 x 140`.**
+:::{Note}
+**To ensure smooth image performance, the color recognition mode uses a tested resolution of `160 x 140`.**
+:::
 
 #### 7.4.3.5 Notes
 
@@ -1823,9 +1788,9 @@ Module wiring: as shown below, connect the module to any I2C Port highlighted in
 
 The module uses an I2C Port and can read the distance measured by the ultrasonic sensor through I2C communication. Two RGB LEDs are integrated at the ultrasonic probe position. The brightness can be adjusted. Color changes and color mixing across the red channel `R`, green channel `G`, and blue channel `B` make full-color lighting effects possible.
 
-> [!NOTE]
->
-> **The glowy ultrasonic module is already connected to the onboard I2C Port at the factory. No additional wiring is required.**
+:::{Note}
+**The glowy ultrasonic module is already connected to the onboard I2C Port at the factory. No additional wiring is required.**
+:::
 
 #### 7.4.4.4 Program Download
 
@@ -1845,9 +1810,9 @@ The module uses an I2C Port and can read the distance measured by the ultrasonic
 
 <img class="common_img" src="../_static/media/chapter_5/section_4/02/image7.png" width="500px"/>
 
-> [!NOTE]
->
-> **Modify the development board configuration before downloading the program to the AI vision module.**
+:::{Note}
+**Modify the development board configuration before downloading the program to the AI vision module.**
+:::
 
 (5) Finally, click <img src="../_static/media/chapter_5/section_4/02/image8.png" width="70px"/> to download the code to the ESP32-S3 AI vision module. Wait until flashing is complete.
 
@@ -1925,9 +1890,9 @@ Module wiring: as shown below, connect the module to any I2C Port highlighted in
 
 The module uses an I2C Port and can read the distance measured by the ultrasonic sensor through I2C communication. Two RGB LEDs are integrated at the ultrasonic probe position. The brightness can be adjusted. Color changes and color mixing across the red channel `R`, green channel `G`, and blue channel `B` make full-color lighting effects possible.
 
-> [!NOTE]
->
-> **The glowy ultrasonic module is already connected to the onboard I2C Port at the factory. No additional wiring is required.**
+:::{Note}
+**The glowy ultrasonic module is already connected to the onboard I2C Port at the factory. No additional wiring is required.**
+:::
 
 #### 7.4.5.4 Program Download
 
@@ -1947,9 +1912,9 @@ The module uses an I2C Port and can read the distance measured by the ultrasonic
 
 <img class="common_img" src="../_static/media/chapter_5/section_4/02/image7.png" width="500px"/>
 
-> [!NOTE]
->
-> **Modify the development board configuration before downloading the program to the AI vision module.**
+:::{Note}
+**Modify the development board configuration before downloading the program to the AI vision module.**
+:::
 
 (5) Finally, click <img src="../_static/media/chapter_5/section_4/02/image8.png" width="70px"/> to download the code to the ESP32-S3 AI vision module. Wait until flashing is complete.
 
@@ -2019,9 +1984,9 @@ Module wiring: as shown below, connect the module to any I2C Port highlighted in
 
 The module uses an I2C Port and can read the distance measured by the ultrasonic sensor through I2C communication. Two RGB LEDs are integrated at the ultrasonic probe position. The brightness can be adjusted. Color changes and color mixing across the red channel `R`, green channel `G`, and blue channel `B` make full-color lighting effects possible.
 
-> [!NOTE]
->
-> **The glowy ultrasonic module is already connected to the onboard I2C Port at the factory. No additional wiring is required.**
+:::{Note}
+**The glowy ultrasonic module is already connected to the onboard I2C Port at the factory. No additional wiring is required.**
+:::
 
 #### 7.4.6.4 Program Download
 
@@ -2041,9 +2006,9 @@ The module uses an I2C Port and can read the distance measured by the ultrasonic
 
 <img class="common_img" src="../_static/media/chapter_5/section_4/02/image7.png" width="500px"/>
 
-> [!NOTE]
->
-> **Modify the development board configuration before downloading the program to the AI vision module.**
+:::{Note}
+**Modify the development board configuration before downloading the program to the AI vision module.**
+:::
 
 (5) Finally, click <img src="../_static/media/chapter_5/section_4/02/image8.png" width="70px"/> to download the code to the ESP32-S3 AI vision module. Wait until flashing is complete.
 
@@ -2133,9 +2098,9 @@ Module wiring: as shown below, connect the module to any I2C Port highlighted in
 
 <img class="common_img" src="../_static/media/chapter_5/section_4/02/image7.png" width="500px"/>
 
-> [!NOTE]
->
-> **Modify the development board configuration before downloading the program to the AI vision module.**
+:::{Note}
+**Modify the development board configuration before downloading the program to the AI vision module.**
+:::
 
 (5) Finally, click <img src="../_static/media/chapter_5/section_4/02/image8.png" width="70px"/> to download the code to the ESP32-S3 AI vision module. Wait until flashing is complete.
 
@@ -2175,7 +2140,7 @@ When a face is detected, miniHexa performs a cute action.
 
 2. If the ESP32-S3 AI vision module detects a face, control miniHexa to swing within `±10°`, then return to the level posture.
 
-<img class="common_img" src="../_static/media/chapter_6/section_4/05/image3.png" />
+<img class="common_img" src="../_static/media/chapter_6/section_4/05/image3.png" style="width:500px" />
 
 
 
@@ -2284,9 +2249,9 @@ Installation: mount the voice interaction module on the rear panel of miniHexa.
 
 The module uses an I2C communication interface and can read the distance measured by the ultrasonic sensor through I2C communication. Two RGB LEDs are integrated at the ultrasonic probe position. The brightness can be adjusted. Color changes and color mixing across the red channel `R`, green channel `G`, and blue channel `B` make full-color lighting effects possible.
 
-> [!NOTE]
->
-> **The glowy ultrasonic module is already connected to the onboard I2C Port at the factory. No additional wiring is required.**
+:::{Note}
+**The glowy ultrasonic module is already connected to the onboard I2C Port at the factory. No additional wiring is required.**
+:::
 
 #### 7.5.3.4 Program Download
 

@@ -14,11 +14,10 @@ Alternatively, scan the QR code to download it:
 
 <img src="../_static/media/chapter_2/section_1/media/image30.png" style="width:200px" class="common_img" />
 
-> [!Note]
->
-> **Before using the APP, enable Bluetooth and Location Services in the phone settings.**
->
-> **Use the Bluetooth button in the APP to pair and connect the device. Do not pair through the phone settings with a pairing key.**
+:::{Note}
+* **Before using the APP, enable Bluetooth and Location Services in the phone settings.**
+* **Use the Bluetooth button in the APP to pair and connect the device. Do not pair through the phone settings with a pairing key.**
+:::
 
 1. Turn on the miniHexa power switch.
 
@@ -32,8 +31,9 @@ Alternatively, scan the QR code to download it:
 
 <img src="../_static/media/chapter_2/section_1/media/image5.png" style="width:600px" class="common_img" />
 
-> [!NOTE]
-> **If a name related to "miniHexa" is not displayed at first, tap "Search Again" to find the device.**
+:::{Note}
+**If a name related to "miniHexa" is not displayed at first, tap "Search Again" to find the device.**
+:::
 
 4. After the connection succeeds, the Bluetooth icon in the upper-right corner stays on, and the battery level appears on the left.
 
@@ -59,68 +59,20 @@ The interface is divided into two areas, as shown below:
 
 2. Control Area
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr>
-<td style="text-align: center;">Icon</td>
-<td style="text-align: center;">Function Description</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_2/section_1/media/image13.png" class="inline-icon" style="width:100px" /></td>
-<td style="text-align: center;">Controls miniHexa movement</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_2/section_1/media/image14.png" class="inline-icon" style="width:100px" /></td>
-<td style="text-align: center;">Controls the planar position point of the miniHexa body center</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_2/section_1/media/image15.png" class="inline-icon" style="width:100px" /></td>
-<td style="text-align: center;">Switches the corresponding control mode</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_2/section_1/media/image16.png" class="inline-icon" style="width:100px" /></td>
-<td style="text-align: center;">Displays the ultrasonic distance</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_2/section_1/media/image17.png" class="inline-icon" style="width:100px" /></td>
-<td style="text-align: center;">Switches the ultrasonic obstacle avoidance function on or off</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_2/section_1/media/image18.png" class="inline-icon" style="width:100px" /></td>
-<td style="text-align: center;">Controls the miniHexa body Euler angles through the phone gyroscope</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_2/section_1/media/image19.png" class="inline-icon" style="width:100px" /></td>
-<td style="text-align: center;">Switches the IMU self-balancing feature on or off</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_2/section_1/media/image20.png" class="inline-icon" style="width:100px" /></td>
-<td style="text-align: center;">Runs action groups</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_2/section_1/media/image21.png" class="inline-icon" style="width:100px" /></td>
-<td style="text-align: center;">Switches the ultrasonic RGB lights on or off</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_2/section_1/media/image22.png" class="inline-icon" style="width:100px" /></td>
-<td style="text-align: center;">Adjusts the color of the ultrasonic RGB lights</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_2/section_1/media/image23.png" class="inline-icon" style="width:100px" /></td>
-<td style="text-align: center;"><p>Controls the standing height of miniHexa</p>
-<p>Height adjustment range: 0-30</p></td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_2/section_1/media/image24.png" class="inline-icon" style="width:100px" /></td>
-<td style="text-align: center;"><p>The left and right sides control miniHexa left and right turning</p>
-<p>The center resets miniHexa to the attention pose</p></td>
-</tr>
-</tbody>
-</table>
+| Icon | Function Description |
+|:--:|:--:|
+| <img src="../_static/media/chapter_2/section_1/media/image13.png" class="inline-icon" style="width:100px" /> | Controls miniHexa movement |
+| <img src="../_static/media/chapter_2/section_1/media/image14.png" class="inline-icon" style="width:100px" /> | Controls the planar position point of the miniHexa body center |
+| <img src="../_static/media/chapter_2/section_1/media/image15.png" class="inline-icon" style="width:100px" /> | Switches the corresponding control mode |
+| <img src="../_static/media/chapter_2/section_1/media/image16.png" class="inline-icon" style="width:100px" /> | Displays the ultrasonic distance |
+| <img src="../_static/media/chapter_2/section_1/media/image17.png" class="inline-icon" style="width:100px" /> | Switches the ultrasonic obstacle avoidance function on or off |
+| <img src="../_static/media/chapter_2/section_1/media/image18.png" class="inline-icon" style="width:100px" /> | Controls the miniHexa body Euler angles through the phone gyroscope |
+| <img src="../_static/media/chapter_2/section_1/media/image19.png" class="inline-icon" style="width:100px" /> | Switches the IMU self-balancing feature on or off |
+| <img src="../_static/media/chapter_2/section_1/media/image20.png" class="inline-icon" style="width:100px" /> | Runs action groups |
+| <img src="../_static/media/chapter_2/section_1/media/image21.png" class="inline-icon" style="width:100px" /> | Switches the ultrasonic RGB lights on or off |
+| <img src="../_static/media/chapter_2/section_1/media/image22.png" class="inline-icon" style="width:100px" /> | Adjusts the color of the ultrasonic RGB lights |
+| <img src="../_static/media/chapter_2/section_1/media/image23.png" class="inline-icon" style="width:100px" /> | Controls the standing height of miniHexa<br>Height adjustment range: 0-30 |
+| <img src="../_static/media/chapter_2/section_1/media/image24.png" class="inline-icon" style="width:100px" /> | The left and right sides control miniHexa left and right turning<br>The center resets miniHexa to the attention pose |
 
 ## 2.3 APP Program Download Instructions (Optional)
 
@@ -143,7 +95,7 @@ miniHexa is factory-flashed with the APP program. Downloading other feature prog
 <img src="../_static/media/chapter_2/section_1/media/image28.png" style="width:600px" class="common_img" />
 
 :::{Note}
-Make sure the development board configuration is modified before downloading the program.
+**Make sure the development board configuration is modified before downloading the program.**
 :::
 
 5. Click **Compile** first, then click **Upload**. When the following screen appears in the output box at the bottom of the software after upload is complete, the program download is complete.

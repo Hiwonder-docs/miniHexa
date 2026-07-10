@@ -123,43 +123,38 @@ The miniHexa mainboard uses a modular controller architecture. The onboard micro
 <img src="../_static/media/chapter_1/section_3/media/image2.png" style="width:600px" class="common_img" />
 
 <table>
-<colgroup>
-<col style="width: 49%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr>
-<td style="text-align: center;"><strong>Interface / Onboard Sensor Name</strong></td>
-<td style="text-align: center;"><strong>Interface / Onboard Sensor Function</strong></td>
-</tr>
-<tr>
-<td style="text-align: center;">PWM Servo Port</td>
-<td style="text-align: center;">Controls PWM servos</td>
-</tr>
-<tr>
-<td style="text-align: center;">Power Switch</td>
-<td style="text-align: center;">Turns the controller power on or off</td>
-</tr>
-<tr>
-<td style="text-align: center;">GPIO Port</td>
-<td rowspan="2" style="text-align: center;">Connects external sensor modules</td>
-</tr>
-<tr>
-<td style="text-align: center;">I2C Port</td>
-</tr>
-<tr>
-<td style="text-align: center;">Buzzer</td>
-<td style="text-align: center;">Provides sound prompts</td>
-</tr>
-<tr>
-<td style="text-align: center;">Sound Sensor</td>
-<td style="text-align: center;">Detects ambient sound intensity</td>
-</tr>
-<tr>
-<td style="text-align: center;">IMU Sensor</td>
-<td style="text-align: center;">Detects robot posture</td>
-</tr>
-</tbody>
+  <tr>
+    <th>Interface / Onboard Sensor Name</th>
+    <th>Interface / Onboard Sensor Function</th>
+  </tr>
+  <tr>
+    <td>PWM Servo Port</td>
+    <td>Controls PWM servos</td>
+  </tr>
+  <tr>
+    <td>Power Switch</td>
+    <td>Turns the controller power on or off</td>
+  </tr>
+  <tr>
+    <td>GPIO Port</td>
+    <td>Connects external sensor modules</td>
+  </tr>
+  <tr>
+    <td>I2C Port</td>
+    <td>Connects external sensor modules</td>
+  </tr>
+  <tr>
+    <td>Buzzer</td>
+    <td>Provides sound prompts</td>
+  </tr>
+  <tr>
+    <td>Sound Sensor</td>
+    <td>Detects ambient sound intensity</td>
+  </tr>
+  <tr>
+    <td>IMU Sensor</td>
+    <td>Detects robot posture</td>
+  </tr>
 </table>
 
 

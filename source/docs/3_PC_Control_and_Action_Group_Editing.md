@@ -16,9 +16,9 @@
 
 ### 3.1.2 Launch the Software
 
-> [!NOTE]
->
-> **The PC software is portable and does not need installation. Install the driver on the PC before use.**
+:::{Note}
+**The PC software is portable and does not need installation. Install the driver on the PC before use.**
+:::
 
 1) Find the PC software [**02 PC Software Installation Package\02 PC Software\MiniHexa.exe**](https://drive.google.com/drive/folders/1mL_xzRC31Jd9fkhl4Ro52ILncmW3Jg3U?usp=sharing).
 
@@ -32,11 +32,10 @@
 
 #### Preparation
 
-> [!NOTE]
->
-> * **Before this step, make sure the factory APP program has been flashed to the ESP32 controller. This program supports both APP control and PC software control.**
->
-> * **miniHexa is preloaded with the factory program before shipment and can be powered on for direct operation. If another program has overwritten it, find the factory program in [03 PC Software Program Files](https://drive.google.com/drive/folders/16SWjUtvrDMPfkTLHSJdKKmKxgA4cDKFW?usp=sharing) and download it again. For the download method, see [3.1.5 APP Program Download Instructions (Optional)](#anther3.1.5).**
+:::{Note}
+* **Before this step, make sure the factory APP program has been flashed to the ESP32 controller. This program supports both APP control and PC software control.**
+* **miniHexa is preloaded with the factory program before shipment and can be powered on for direct operation. If another program has overwritten it, find the factory program in [03 PC Software Program Files](https://drive.google.com/drive/folders/16SWjUtvrDMPfkTLHSJdKKmKxgA4cDKFW?usp=sharing) and download it again. For the download method, see [3.1.5 APP Program Download Instructions (Optional)](#anther3.1.5).**
+:::
 
 1) Turn on the miniHexa power switch.
 
@@ -58,9 +57,9 @@
 
 * **Wi-Fi Connection**
 
-> [!NOTE]
->
-> **To connect the robot in this way, prepare a hotspot before powering on the robot. A Wi-Fi router or mobile hotspot can be used. Set both the hotspot name and password to "hiwonder".**
+:::{Note}
+**To connect the robot in this way, prepare a hotspot before powering on the robot. A Wi-Fi router or mobile hotspot can be used. Set both the hotspot name and password to "hiwonder".**
+:::
 
 1) After the robot powers on, it automatically searches for and connects to the hotspot named **hiwonder** with the password **hiwonder**. Wait a moment, then connect the PC to the same hotspot.
 
@@ -94,9 +93,9 @@ The PC software interacts with miniHexa in three modes for different functions:
 
 <img src="../_static/media/chapter_3/section_1/media/image15.png" class="common_img"  />
 
-> [!NOTE]
->
-> **For details about Deviation Mode in the PC software, see [5.1 Arduino IDE Installation and Deviation Calibration\5.1.2 Deviation Calibration](https://drive.google.com/drive/folders/1_sjERc-lw-v9gUabl3QbM24jkGcvWKrN?usp=sharing). This section does not explain it further.**
+:::{Note}
+**For details about Deviation Mode in the PC software, see [5.1 Arduino IDE Installation and Deviation Calibration\5.1.2 Deviation Calibration](https://drive.google.com/drive/folders/1_sjERc-lw-v9gUabl3QbM24jkGcvWKrN?usp=sharing). This section does not explain it further.**
+:::
 
 The **General Mode** and **Posture Control** modes in the PC software are introduced in [3.2 Omnidirectional Movement Control](#anther3.2) and [3.3 Posture Control](#anther3.3).
 
@@ -124,9 +123,9 @@ The miniHexa is factory-flashed with the APP program. Downloading other feature 
 
 <img src="../_static/media/chapter_3/section_1/media/image18.png" class="common_img"  />
 
-> [!NOTE]
->
-> * **Make sure the development board configuration is modified before downloading the program.**
+:::{Note}
+**Make sure the development board configuration is modified before downloading the program.**
+:::
 
 5) Click **Compile** first, then click **Upload**. When the following screen appears in the output box at the bottom of the software after upload is complete, the program download is complete.
 
@@ -213,9 +212,9 @@ When controlling posture, the robot stands still in place and keeps its center o
 
 ### 3.4.1 Launch the Software
 
-> [!NOTE]
->
-> * **The PC software is portable and does not need installation. Install the [driver](https://drive.google.com/drive/folders/1qN7LtmMBUqRqhJRAbwXvCm2j593ODaK7?usp=sharing) on the PC before use.**
+:::{Note}
+**The PC software is portable and does not need installation. Install the [driver](https://drive.google.com/drive/folders/1qN7LtmMBUqRqhJRAbwXvCm2j593ODaK7?usp=sharing) on the PC before use.**
+:::
 
 1. Find the PC software [**MiniHexa.exe**](https://drive.google.com/drive/folders/1mL_xzRC31Jd9fkhl4Ro52ILncmW3Jg3U?usp=sharing).
 
@@ -229,9 +228,9 @@ When controlling posture, the robot stands still in place and keeps its center o
 
 ### 3.4.2 Device Connection
 
-> [!NOTE]
->
-> * **This section uses serial port connection as an example. For the Wi-Fi connection method, see [3.1 PC Software Introduction](#anther3.1).**
+:::{Note}
+**This section uses serial port connection as an example. For the Wi-Fi connection method, see [3.1 PC Software Introduction](#anther3.1).**
+:::
 
 1) Turn on the miniHexa controller board switch.
 
@@ -257,13 +256,13 @@ When controlling posture, the robot stands still in place and keeps its center o
 
 <img src="../_static/media/chapter_3/section_4/media/image8.png" class="common_img"  />
 
-**1: Device Connection Status**
+**1.Device Connection Status**
 
 | Icon | Function |
 |:---|:---|
 |<img src="../_static/media/chapter_3/section_4/media/image9.png" class="inline-icon"  /> | Displays the device connection status. Green indicates a successful connection. Red indicates that the device is not connected or has disconnected, and the prompt **Wired Not Connected** appears. |
 
-**2: Servo Control Area:**
+**2.Servo Control Area:**
 
 The Servo Control Area displays the selected servo icons. Adjust the corresponding slider value to adjust the servo position.
 
@@ -274,7 +273,7 @@ The Servo Control Area displays the selected servo icons. Adjust the correspondi
 |<img src="../_static/media/chapter_3/section_4/media/image11.png" class="common_img"  /> | Indicates the servo ID number. ID 18 is used as an example here. |
 |<img src="../_static/media/chapter_3/section_4/media/image12.png" class="common_img"  /> | Adjusts the servo position. The minimum value is 500, and the maximum value is 2500. |
 
-**3: Action Group Detail List**
+**3.Action Group Detail List**
 
 The Action Group Detail List shows the duration of each action in the current action group and the servo values in each action.
 
@@ -286,96 +285,30 @@ The Action Group Detail List shows the duration of each action in the current ac
 |<img src="../_static/media/chapter_3/section_4/media/image15.png" class="inline-icon"  /> | Duration of the action, which is the time required to execute the action. |
 |<img src="../_static/media/chapter_3/section_4/media/image16.png" class="inline-icon"  /> | Action value under the corresponding ID, which is the position value. |
 
-**4: Action Group Settings Area**
+**4.Action Group Settings Area**
 
-<table>
-<colgroup>
-<col style="width: 42%" />
-<col style="width: 57%" />
-</colgroup>
-<tbody>
-<tr>
-<td style="text-align: center;">Icon</td>
-<td style="text-align: center;">Function</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_3/section_4/media/image17.png" class="common_img" /></td>
-<td style="text-align: center;">Action group number selection button. Click it to select a number from 0 to 254.</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_3/section_4/media/image18.png" class="common_img"  /></td>
-<td style="text-align: center;">Downloads the actions in the current list to the controller board. After download, the original actions in that action group are overwritten.</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_3/section_4/media/image19.png" class="common_img"/></td>
-<td style="text-align: center;">Erases the actions in the currently selected action group.</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_3/section_4/media/image20.png" class="common_img"  /></td>
-<td style="text-align: center;">Use with caution. Erases all actions in action groups 0 to 254.</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_3/section_4/media/image21.png" class="common_img"  /></td>
-<td style="text-align: center;">Runs the action group with the selected number once.</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_3/section_4/media/image22.png" class="common_img"  /></td>
-<td style="text-align: center;">Stops the action group that is currently running.</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_3/section_4/media/image23.png" class="common_img"  /></td>
-<td style="text-align: center;">Adds the servo values in the Servo Control Area as an action to the last row of the Action Group Detail List.</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_3/section_4/media/image24.png" class="common_img" /></td>
-<td style="text-align: center;">Deletes the selected action from the Action Group Detail List.</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_3/section_4/media/image25.png" class="common_img"  /></td>
-<td style="text-align: center;"><p>Replaces the selected angle values in the Action Group Detail List.</p>
-<p>The angle values are replaced with the servo values in the center Servo Control Area, and the action duration is replaced with the time set in <strong>duration(ms)</strong>.</p></td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_3/section_4/media/image26.png" class="common_img"  /></td>
-<td style="text-align: center;"><p>Inserts one action row above the selected action.</p>
-<p>The action duration is the time set in <strong>duration(ms)</strong>, and the angle values are the servo values in the center Servo Control Area.</p></td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_3/section_4/media/image27.png" class="common_img" /></td>
-<td style="text-align: center;">Moves the selected frame in the Action Group Detail List up and swaps its execution order with the previous frame.</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_3/section_4/media/image28.png" class="common_img"  /></td>
-<td style="text-align: center;">Moves the selected frame in the Action Group Detail List down and swaps its execution order with the next frame.</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_3/section_4/media/image29.png" class="common_img"  /></td>
-<td style="text-align: center;">Opens an action group file saved in .rob format. For the provided action group files, see <strong>2. Software\10. Action Group Files</strong>.</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_3/section_4/media/image30.png" class="common_img"  /></td>
-<td style="text-align: center;">Saves the actions currently in the Action Group Detail List to a specified location.</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_3/section_4/media/image31.png" class="common_img"  /></td>
-<td style="text-align: center;">After one action group is opened, click the Integrate Action File button to continue opening another action group file and integrate the two action group files into a new action group.</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_3/section_4/media/image32.png" class="common_img"  /></td>
-<td style="text-align: center;">Click this button to run the actions in the Action Group Detail List once. If <strong>Loop</strong> is selected, the robot repeats the action.</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_3/section_4/media/image33.png" class="common_img"  /></td>
-<td style="text-align: center;">Duration of the selected frame in the current <strong>Action Group Detail List</strong> area.</td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="../_static/media/chapter_3/section_4/media/image34.png" class="common_img"  /></td>
-<td style="text-align: center;">Total accumulated duration of all frames in the current <strong>Action Group Detail List</strong> area.</td>
-</tr>
-</tbody>
-</table>
+| Icon | Function |
+|:--:|:--:|
+|<img src="../_static/media/chapter_3/section_4/media/image17.png" class="inline-icon"  /> | Action group number selection button. Click it to select a number from 0 to 254. |
+|<img src="../_static/media/chapter_3/section_4/media/image18.png" class="inline-icon"  /> | Downloads the actions in the current list to the controller board. After download, the original actions in that action group are overwritten. |
+|<img src="../_static/media/chapter_3/section_4/media/image19.png" class="inline-icon"  /> | Erases the actions in the currently selected action group. |
+|<img src="../_static/media/chapter_3/section_4/media/image20.png" class="inline-icon"  /> | Use with caution. Erases all actions in action groups 0 to 254. |
+|<img src="../_static/media/chapter_3/section_4/media/image21.png" class="inline-icon"  /> | Runs the action group with the selected number once. |
+|<img src="../_static/media/chapter_3/section_4/media/image22.png" class="inline-icon"  /> | Stops the action group that is currently running. |
+|<img src="../_static/media/chapter_3/section_4/media/image23.png" class="inline-icon"  /> | Adds the servo values in the Servo Control Area as an action to the last row of the Action Group Detail List. |
+|<img src="../_static/media/chapter_3/section_4/media/image24.png" class="inline-icon"  /> | Deletes the selected action from the Action Group Detail List. |
+|<img src="../_static/media/chapter_3/section_4/media/image25.png" class="inline-icon"  /> | Replaces the selected angle values in the Action Group Detail List.<br>The angle values are replaced with the servo values in the center Servo Control Area, and the action duration is replaced with the time set in **duration(ms)**. |
+|<img src="../_static/media/chapter_3/section_4/media/image26.png" class="inline-icon"  /> | Inserts one action row above the selected action.<br>The action duration is the time set in **duration(ms)**, and the angle values are the servo values in the center Servo Control Area. |
+|<img src="../_static/media/chapter_3/section_4/media/image27.png" class="inline-icon"  /> | Moves the selected frame in the Action Group Detail List up and swaps its execution order with the previous frame. |
+|<img src="../_static/media/chapter_3/section_4/media/image28.png" class="inline-icon"  /> | Moves the selected frame in the Action Group Detail List down and swaps its execution order with the next frame. |
+|<img src="../_static/media/chapter_3/section_4/media/image29.png" class="inline-icon"  /> | Opens an action group file saved in .rob format. For the provided action group files, see **2. Software\10. Action Group Files**. |
+|<img src="../_static/media/chapter_3/section_4/media/image30.png" class="inline-icon"  /> | Saves the actions currently in the Action Group Detail List to a specified location. |
+|<img src="../_static/media/chapter_3/section_4/media/image31.png" class="inline-icon"  /> | After one action group is opened, click the Integrate Action File button to continue opening another action group file and integrate the two action group files into a new action group. |
+|<img src="../_static/media/chapter_3/section_4/media/image32.png" class="inline-icon"  /> | Click this button to run the actions in the Action Group Detail List once. If **Loop** is selected, the robot repeats the action. |
+|<img src="../_static/media/chapter_3/section_4/media/image33.png" class="inline-icon"  /> | Duration of the selected frame in the current **Action Group Detail List** area. |
+|<img src="../_static/media/chapter_3/section_4/media/image34.png" class="inline-icon"  /> | Total accumulated duration of all frames in the current **Action Group Detail List** area. |
 
-**5: Deviation Settings Area**
+**5.Deviation Settings Area**
 
 The Servo Control Area displays the selected servo icons. Adjust the corresponding slider value to adjust the servo deviation.
 
@@ -422,9 +355,9 @@ Download the reference sample action group file in [**2. Software\10. Action Gro
 
 Create a **Wave** action group consisting of 9 actions.
 
-> [!NOTE]
->
-> * **The actions in this section are only examples and are intended to help quickly learn the Action Edit feature. To reference standard actions, go to the reference sample action group files in [2. Software\10. Action Group Files](https://drive.google.com/drive/folders/1bR30Kn7b84IqUfwQ5Mr-kZmwecwTGkwo?usp=sharing).**
+:::{Note}
+**The actions in this section are only examples and are intended to help quickly learn the Action Edit feature. To reference standard actions, go to the reference sample action group files in [2. Software\10. Action Group Files](https://drive.google.com/drive/folders/1bR30Kn7b84IqUfwQ5Mr-kZmwecwTGkwo?usp=sharing).**
+:::
 
 ### 3.6.2 Action Implementation
 
@@ -450,9 +383,9 @@ Create a **Wave** action group consisting of 9 actions.
 
 <img src="../_static/media/chapter_3/section_5/media/image5.png" class="common_img"  />
 
-> [!NOTE]
->
-> * **Hold down the left mouse button and quickly click the slider for fine adjustment.**
+:::{Note}
+**Hold down the left mouse button and quickly click the slider for fine adjustment.**
+:::
 
 3) Click **Add Action** to add the bent and extended action to the action list on the right.
 
@@ -504,9 +437,9 @@ Learn the miniHexa action file integration function and merge action groups.
 
 <img src="../_static/media/chapter_3/section_6/media/image2.jpeg" class="common_img"  alt="11" />
 
-> [!NOTE]
->
-> * **If the factory program is running on the core board, briefly press the K1 button on the servo controller once after power-on to switch the working mode. When the buzzer beeps twice, the robot enters PC software control mode and starts processing PC software control operations.**
+:::{Note}
+**If the factory program is running on the core board, briefly press the K1 button on the servo controller once after power-on to switch the working mode. When the buzzer beeps twice, the robot enters PC software control mode and starts processing PC software control operations.**
+:::
 
 3) Open the PC software, connect the software serial port, click the **Integrate Action File** button in the Action Group Settings Area, and open Action Group 6 in [**2. Software\10. Action Group Files**](https://drive.google.com/drive/folders/1bR30Kn7b84IqUfwQ5Mr-kZmwecwTGkwo?usp=sharing).
 
@@ -528,9 +461,9 @@ Learn the miniHexa action file integration function and merge action groups.
 
 <img src="../_static/media/chapter_3/section_6/media/image8.png" class="common_img"  />
 
-> [!NOTE]
->
-> * **If too many actions are integrated in the Action Group Detail List, the PC software prompts that the limit has been exceeded. In this case, the action cannot be downloaded to the controller board and can only be run online for preview.**
+:::{Note}
+**If too many actions are integrated in the Action Group Detail List, the PC software prompts that the limit has been exceeded. In this case, the action cannot be downloaded to the controller board and can only be run online for preview.**
+:::
 
 ## 3.8 APP Custom Control
 

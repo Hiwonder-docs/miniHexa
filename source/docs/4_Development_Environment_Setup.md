@@ -29,9 +29,9 @@ Arduino IDE is a powerful software platform designed for Arduino microcontroller
 <img src="../_static/media/chapter_4/section_1/media/image5.png" style="width:600px"  />
 
 
-> [!NOTE]
-> 
-> **If the installation prompts for chip driver installation, select "Always trust software from Arduino LLC (A)", then click "Install".**
+:::{Note}
+**If the installation prompts for chip driver installation, select "Always trust software from Arduino LLC (A)", then click "Install".**
+:::
 
 6. After installation is complete, click **Finish**.
 
@@ -132,11 +132,10 @@ Import the required Kinematics and SensorLib libraries before running the progra
 
 ### 4.1.2 Deviation Calibration
 
-> [!NOTE]
->
-> **If a new servo is installed or an original servo is removed, deviation calibration must be performed again.**
->
-> **After long-term use, calibrated servos may develop deviations again due to external force. Adjust them again if needed. Perform deviation calibration based on the actual motion behavior of the robot.**
+:::{Note}
+* **If a new servo is installed or an original servo is removed, deviation calibration must be performed again.**
+* **After long-term use, calibrated servos may develop deviations again due to external force. Adjust them again if needed. Perform deviation calibration based on the actual motion behavior of the robot.**
+:::
 
 #### 4.1.2.1 Preparation
 
@@ -198,9 +197,9 @@ After long-term use, calibrated servos may develop deviations again due to exter
 
 #### 4.2.1.1 Firmware Flashing
 
-> [!NOTE]
->
-> **Before flashing the firmware, make sure to save the servo deviation values according to [Read the Deviation Values in the PC Software](#anther4.2.2.1).**
+:::{Note}
+**Before flashing the firmware, make sure to save the servo deviation values according to [Read the Deviation Values in the PC Software](#anther4.2.2.1).**
+:::
 
 1. Download [**2. Software/5.ESP32S3 Firmware Flashing Tool/flash_download_tool_3.9.7_1**](https://drive.google.com/drive/folders/1rbPG3zhbXIqjQKnRd51mkg0iL94MHgjL?usp=sharing). Then double-click **flash_download_tool_3.9.7.exe** to open the flash tool.
 
@@ -222,9 +221,9 @@ After long-term use, calibrated servos may develop deviations again due to exter
 
 This section explains how to connect the [Hiwonder Python Editor](https://drive.google.com/drive/folders/1f9hSVelLa2x4sF1miJddl4e2izL7kGYJ?usp=sharing) and use its main features. The software allows switching the language to English.
 
-> [!NOTE]
->
-> **If the editor cannot be opened, rename the editor folder to an English-only name such as `Hiwonder`.**
+:::{Note}
+**If the editor cannot be opened, rename the editor folder to an English-only name such as `Hiwonder`.**
+:::
 
 The editor interface is divided into five areas as shown below:
 
@@ -254,9 +253,9 @@ The functions of each area are listed in the table below:
 
 <img class="common_img" src="..\_static\media\chapter_5\section_1\image4.png"  />
 
-> [!NOTE]
->
-> **Importing a local project only imports files from the PC into the editor. It does not download them to the ESP32 controller board.**
+:::{Note}
+**Importing a local project only imports files from the PC into the editor. It does not download them to the ESP32 controller board.**
+:::
 
 **View Files and Programs**
 
@@ -292,13 +291,11 @@ Program download is an interaction between the editor and the device. **02 Omnid
 
 <img class="common_img" src="..\_static\media\chapter_5\section_1\image10.png"  />
 
-> [!NOTE]
->
-> - **If the downloaded file is not named `main.py`, delete the original `main.py` and rename the downloaded file to `main.py`. Another option is to rename the file to `main.py` before downloading.**
->
-> - **"Download and Run" first resets the device, which means a restart, and then downloads and runs the program. This helps improve program stability.**
->
-> - **If the program does not need to run immediately, click the button <img  src="..\_static\media\chapter_5\section_1\image11.png"  /> or right-click the target file and select "Download". Before running the program later, click the icon <img  src="..\_static\media\chapter_5\section_1\image12.png"  /> to reset the device first, then run the program.**
+:::{Note}
+* **If the downloaded file is not named `main.py`, delete the original `main.py` and rename the downloaded file to `main.py`. Another option is to rename the file to `main.py` before downloading.**
+* **"Download and Run" first resets the device, which means a restart, and then downloads and runs the program. This helps improve program stability.**
+* **If the program does not need to run immediately, click the button <img  src="..\_static\media\chapter_5\section_1\image11.png"  /> or right-click the target file and select "Download". Before running the program later, click the icon <img  src="..\_static\media\chapter_5\section_1\image12.png"  /> to reset the device first, then run the program.**
+:::
 
 **Terminal Debugging**
 
@@ -316,9 +313,9 @@ The terminal combines the message window and the debugging console. When no devi
 
 <img class="common_img" src="..\_static\media\chapter_5\section_1\image15.png"  />
 
-> [!NOTE]
->
-> **Press "Ctrl+E" to enter edit mode before pasting code. Otherwise, indentation errors may occur during debugging.**
+:::{Note}
+**Press "Ctrl+E" to enter edit mode before pasting code. Otherwise, indentation errors may occur during debugging.**
+:::
 
 The image below shows the correct result after copy and paste. The indentation is correct.
 
@@ -330,9 +327,9 @@ The image below shows incorrect indentation:
 
 To exit edit mode, press **Ctrl+C**. If an infinite loop is running, press **Ctrl+C** to interrupt it as well.
 
-> [!NOTE]
->
-> **"Ctrl+C" only interrupts a running program in the terminal. It does not copy text. "Ctrl+V" does not paste text in the terminal.**
+:::{Note}
+**"Ctrl+C" only interrupts a running program in the terminal. It does not copy text. "Ctrl+V" does not paste text in the terminal.**
+:::
 
 4. Use **Tab** to complete code when entering commands in the terminal. For example, enter `os` and press **Tab**. The result is shown below:
 
@@ -362,9 +359,9 @@ Downloading an Arduino program erases the MicroPython firmware on the ESP32. The
 
 <img class="common_img" src="..\_static\media\chapter_5\section_1\image20.png"  width="800px" />
 
-> [!NOTE]
->
-> **After the servo deviation values are read, take a screenshot to keep a backup and prevent data loss.**
+:::{Note}
+**After the servo deviation values are read, take a screenshot to keep a backup and prevent data loss.**
+:::
 
 #### 4.2.2.2 Write the Deviation Values
 
@@ -427,9 +424,9 @@ robot.set_deviation(18 , -9)
 
 <img class="common_img" src="..\_static\media\chapter_5\section_1\image26.png"  />
 
-> [!NOTE]
->
-> **The deviation setting program needs to be downloaded and run on miniHexa only once. After that, the settings are stored in the miniHexa Arduino programming environment. No additional setup is required.**
+:::{Note}
+**The deviation setting program needs to be downloaded and run on miniHexa only once. After that, the settings are stored in the miniHexa Arduino programming environment. No additional setup is required.**
+:::
 
 #### 4.2.2.3 Read the Written Deviation Values
 
@@ -445,9 +442,9 @@ After the deviation values are written, click <img  src="..\_static\media\chapte
 
 #### 4.3.1.1 Firmware Flashing
 
-> [!NOTE]
->
-> **Before flashing the firmware, make sure to save the servo deviation values according to [Read the Deviation Values in the PC Software](#anther4.3.2.1).**
+:::{Note}
+**Before flashing the firmware, make sure to save the servo deviation values according to [Read the Deviation Values in the PC Software](#anther4.3.2.1).**
+:::
 
 1. Extract [**2. Software/5.ESP32S3 Firmware Flashing Tool/flash_download_tool_3.9.7_1.zip**](https://drive.google.com/drive/folders/1rbPG3zhbXIqjQKnRd51mkg0iL94MHgjL?usp=sharing). Then double-click `flash_download_tool_3.9.7.exe` to open the flash tool.
 
@@ -519,9 +516,9 @@ WonderCode is a Scratch programming tool developed for Hiwonder products. It sup
 
 <img class="common_img" src="../_static/media/chapter_6/section_1/01/image12.png" style="width:400px" />
 
-> [!NOTE]
->
-> **The port number is not fixed and depends on the actual connection on each PC. In this section, "COM4" is used as an example. Do not select "COM1", which is usually reserved for system communication.**
+:::{Note}
+**The port number is not fixed and depends on the actual connection on each PC. In this section, "COM4" is used as an example. Do not select "COM1", which is usually reserved for system communication.**
+:::
 
 If multiple USB devices are connected and the port number is unclear, open **This PC** on the desktop. Then click **Properties -> Device Manager** to check the port number of the controller.
 
@@ -575,9 +572,9 @@ Downloading an Arduino program to the ESP32 erases the existing firmware, which 
 
 <img class="common_img" src="../_static/media/chapter_5/section_1/image20.png"  width="800px" />
 
-> [!NOTE]
->
-> **After the servo deviation values are read, take a screenshot to keep a backup and prevent data loss.**
+:::{Note}
+**After the servo deviation values are read, take a screenshot to keep a backup and prevent data loss.**
+:::
 
 <p id ="anther4.3.2.2"></p>
 
@@ -642,9 +639,9 @@ robot.set_deviation(18 , -9)
 
 <img class="common_img" src="../_static/media/chapter_5/section_1/image26.png"  />
 
-> [!NOTE]
->
-> **The deviation calibration program needs to be downloaded to miniHexa and run only once. After that, the settings are stored in the miniHexa Arduino programming environment. No additional setup is required.**
+:::{Note}
+**The deviation calibration program needs to be downloaded to miniHexa and run only once. After that, the settings are stored in the miniHexa Arduino programming environment. No additional setup is required.**
+:::
 
 #### 4.3.2.3 Read the Written Deviation Values
 

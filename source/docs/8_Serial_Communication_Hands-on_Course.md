@@ -6,9 +6,9 @@ This section introduces the controller-device relationship when miniHexa communi
 
 In this chapter, miniHexa always works as a device and transmits information with other equipment through the UART serial port.
 
-> [!NOTE]
->
-> **The communication protocol used between other PC software and miniHexa is the [8.3 miniHexa Communication Protocol](#anther8.3).**
+:::{Note}
+**The communication protocol used between other PC software and miniHexa is the [8.3 miniHexa Communication Protocol](#anther8.3).**
+:::
 
 ### 8.1.1 Controller-Device Relationship
 
@@ -44,9 +44,9 @@ When the controller reads the robot status, it needs to receive the status infor
 
 ### 8.1.4 Hardware Connection
 
-> [!NOTE]
->
-> **Before downloading the program, make sure the serial port driver has been installed.**
+:::{Note}
+**Before downloading the program, make sure the serial port driver has been installed.**
+:::
 
 1) Use a USB download cable to connect the PC USB port to the USB serial port on the controller board.
 
@@ -76,9 +76,9 @@ This section uses a PC serial port to control miniHexa movement, posture, RGB li
 
 ### 8.2.1 Principle
 
-> [!NOTE]
->
-> **This section can be implemented only after the miniHexa device-side program has been flashed. Upload [02 Program Files\9.2.2 miniHexa Device-Side Program](https://drive.google.com/drive/folders/1ulrGCICECrIp0ckmUOvOKp4Qxf9eKs-f?usp=sharing) in the same path as this document first.**
+:::{Note}
+**This section can be implemented only after the miniHexa device-side program has been flashed. Upload [02 Program Files\9.2.2 miniHexa Device-Side Program](https://drive.google.com/drive/folders/1ulrGCICECrIp0ckmUOvOKp4Qxf9eKs-f?usp=sharing) in the same path as this document first.**
+:::
 
 1) After miniHexa is connected to the PC, it can be controlled through serial communication. The default UART serial port data transmission format is:
 
